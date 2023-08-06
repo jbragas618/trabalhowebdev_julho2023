@@ -1,0 +1,45 @@
+/* Estilos gerais da página */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    color: #5814c4;
+    line-height: 1.6;
+  }
+ 
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 40px;
+  }
+/* Estilos do cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+header h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+
+/* Estilos do rodapé */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos para links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}  
