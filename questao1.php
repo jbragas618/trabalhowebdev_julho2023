@@ -95,9 +95,70 @@
                 }
 
 
+                ?>
 
+                <?php
+
+
+                if (isset($_GET['radiobutton']) && isset($_GET['quantity'])) {
+
+
+                    $radiobutton = $_GET['radiobutton'];
+                    $quantity = (int) $_GET['quantity'];
+
+
+                    switch ($radiobutton) {
+                        case 'Texto':
+                            for ($i = 1; $i <= $quantity; $i++) {
+                                echo "<p>&lt;input type='text' id='text_$i' name='text_$i'&gt</p>";
+                            }
+                            break;
+                        case 'Senha':
+                            for ($i = 1; $i <= $quantity; $i++) {
+                                echo "<p>&lt;input type='password' id='senha_$i' name='senha_$i'&gt;</p>";
+                            }
+                            break;
+                        case 'Botao':
+                            for ($i = 1; $i <= $quantity; $i++) {
+                                echo "<p>&lt;input type='button' id='button_$i' name='button_$i'&gt;</p>";
+                            }
+                            break;
+                        case 'Radio':
+                            for ($i = 1; $i <= $quantity; $i++) {
+                                echo "<p>&lt;input type='radio' id='radio_$i' name='radio_$i'&gt;</p>";
+                            }
+                            break;
+                        case 'Caixa de Selecao':
+                            for ($i = 1; $i <= $quantity; $i++) {
+                                echo "<p>&lt;input type='checkbox' id='checkbox_$i' name='checkbox_$i'&gt;</p>";
+                            }
+                            break;
+                        case 'Faixa':
+                            for ($i = 1; $i <= $quantity; $i++) {
+                                echo "<p>&lt;input type='range' id='range_$i' name='range_$i'&gt;</p>";
+                            }
+                            break;
+                        default:
+
+                            echo "<p>Nenhuma opção selecionada ou quantidade inválida</p>";
+                            break;
+                    }
+                }
 
                 ?>
 
 
-                <?php
+            </form>
+
+
+        </main>
+        <a href="index.html">Página Principal</a>
+    </div>
+    <footer>
+        &copy; 2023 Davi Rodrigues & João Braga
+    </footer>
+</body>
+
+
+</html>
+
