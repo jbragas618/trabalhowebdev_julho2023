@@ -60,3 +60,23 @@
 
                     <input type="Submit" value="Processar">
                 </fieldset>
+
+
+                
+                <?php
+                if (isset($_GET['aporteinicial']) && isset($_GET['periodo']) && isset($_GET['rendimentomensal']) && isset($_GET['aportemensal'])) {
+                    $aporteInicial = floatval($_GET['aporteinicial']);
+                    $periodo = intval($_GET['periodo']);
+                    $rendimentoMensal = floatval($_GET['rendimentomensal']);
+                    $aporteMensal = floatval($_GET['aportemensal']);
+
+
+                    function calcularValores($valorAtual, $aporte, $rendimentoMensal)
+                    {
+                        $total = $valorAtual + $aporte;
+                        $rendimento = $total * ($rendimentoMensal / 100);
+                        $total += $rendimento;
+                        $valores = array($rendimento, $total);
+                        return $valores;
+                    };
+                    
