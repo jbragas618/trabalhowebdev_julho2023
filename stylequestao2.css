@@ -1,0 +1,51 @@
+table{
+    width: 50%;
+    overflow-x: hidden;
+}
+
+th {
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg); 
+    height: 20px;
+    width: 20px;
+}
+td{
+    height: 20px;
+    width: 20px;
+    font-size: 13px;
+}
+
+.baixomtgrave {
+    background-color: #030355;
+}
+
+.baixograve {
+    background-color: #1313d3;
+}
+
+.baixo {
+    background-color: #007bff;
+}
+.ideal {
+    background-color: #00ff00;
+}
+
+.sobrepeso {
+    background-color: #c2c200;
+}
+
+.obesidadeI {
+    background-color: red;
+}
+
+.obesidadeII {
+    background-color: #b92525;
+}
+
+.obesidadeIII {
+    background-color: darkred;
+}
+
+.baixomtgrave:hover, .baixograve:hover, .baixo:hover, .ideal:hover, .sobrepeso:hover, .obesidadeI:hover, obesidadeII:hover, .obesidadeIII:hover{
+    background: white;
+}
